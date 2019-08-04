@@ -67,7 +67,19 @@ $ source devel/setup.sh
 ```
 $ cd $WORKSPACE/src
 $ git clone https://github.com/MuhammadDanyialKhan/Drone_2d_Nav.git
+$ cd Autonomous_2D_Navigation/
 ```
+### Install Hector Quadrotor
+```
+$ cd Autonomous_2D_Navigation/
+$ git clone https://bitbucket.org/theconstructcore/hector_quadrotor_sim.git
+```
+### Install Teleop twist keyboard
+```
+$ cd Autonomous_2D_Navigation/
+$ git clone https://github.com/ros-teleop/teleop_twist_keyboard.git
+```
+
 Check for any missing dependencies.
 ```
 $ rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
