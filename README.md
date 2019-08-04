@@ -80,12 +80,36 @@ $ cd $WORKSPACE
 $ source devel/setup.sh
 $ catkin_make
 ```
+To run Hector quadrotor simulation execute the following commands, note that ros sometime requires multiple 
+terminal windows, so run each command in separate terminal.
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+Launch quadrotor Willow Garage simulation 
 ```
-Give the example
+$ cd $WORKSPACE
+$ source devel/setup.sh
+$ roslaunch hector_quadrotor_gazebo camera_launch.launch 
 ```
+run takeoff command
+```
+$ cd $WORKSPACE
+$ source devel/setup.sh
+$ rostopic pub /takeoff std_msgs/Empty "{}"
+```
+run movebase command
+```
+$ cd $WORKSPACE
+$ source devel/setup.sh
+$ roslaunch quadrotor_nav quadrotor_move_base.launch
+```
+launch rviz for visualization
+```
+$ cd $WORKSPACE
+$ source devel/setup.sh
+$ rosrun rviz rviz
+```
+To learn more about rviz movebase and 2d navigation visit:
+http://wiki.ros.org/move_base
+http://wiki.ros.org/navigation
+http://wiki.ros.org/rviz
+
 
