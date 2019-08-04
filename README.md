@@ -49,7 +49,37 @@ $ sudo apt-get update
 $ sudo apt-get install python-catkin-tools
 ```
 
-### 
+### Create the catkin workspace
+This next section creates a ROS workspace and fetch source repositories, placing them in the directory:
+
+Setup the workspace
+```
+$ mkdir -p $WORKSPACE/src
+$ cd $WORKSPACE/src
+$ catkin_init_workspace
+$ cd $WORKSPACE
+$ catkin_make
+$ source devel/setup.sh
+ ```
+
+### Install the Drone_2d_Nav package
+
+```
+$ cd $WORKSPACE/src
+$ git clone https://github.com/MuhammadDanyialKhan/Drone_2d_Nav.git
+```
+Check for any missing dependencies.
+```
+$ rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
+```
+
+Compile the workspace
+
+```
+$ cd $WORKSPACE
+$ source devel/setup.sh
+$ catkin_make
+```
 
 A step by step series of examples that tell you how to get a development env running
 
