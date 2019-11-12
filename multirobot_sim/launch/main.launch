@@ -1,0 +1,8 @@
+<launch>
+
+  <!-- Start Gazebo with wg world running in (max) realtime -->
+  <include file="$(find hector_gazebo_worlds)/launch/willow_garage.launch"/>
+
+  <!-- include our robots -->
+  <include file="$(find multirobot_sim)/launch/robots.launch"/>
+</launch>

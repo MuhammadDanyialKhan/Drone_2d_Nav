@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/danyial/Drone/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/danyial/Drone/src/hector_quadrotor/hector_quadrotor_actions/include/**",
+        "/home/danyial/Drone/src/hector_quadrotor/hector_quadrotor_controller_gazebo/include/**",
+        "/home/danyial/Drone/src/hector_quadrotor/hector_quadrotor_gazebo_plugins/include/**",
+        "/home/danyial/Drone/src/hector_quadrotor/hector_quadrotor_interface/include/**",
+        "/home/danyial/Drone/src/hector_quadrotor/hector_quadrotor_model/include/**",
+        "/home/danyial/Drone/src/hector_quadrotor/hector_quadrotor_pose_estimation/include/**",
+        "/home/danyial/Drone/src/hector_quadrotor/hector_uav_msgs/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ]
+}
