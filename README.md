@@ -84,6 +84,11 @@ Check for any missing dependencies.
 ```
 $ rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
 ```
+### Install rrt_exploration and m_explore package
+```
+$ git clone https://github.com/hasauino/rrt_exploration.git
+$ git clone https://github.com/hrnr/m-explore.git
+```
 
 Compile the workspace
 
