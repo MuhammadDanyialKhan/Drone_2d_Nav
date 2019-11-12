@@ -92,10 +92,7 @@ $ cd $WORKSPACE
 $ source devel/setup.sh
 $ catkin_make
 ```
-To run Hector quadrotor simulation execute the following commands, note that ros sometime requires multiple 
-terminal windows, so run each command in separate terminal.
-
-Launch quadrotor Willow Garage simulation 
+To run Hector quadrotor simulation:
 ```
 $ cd $WORKSPACE
 $ source devel/setup.sh
@@ -119,9 +116,15 @@ $ cd $WORKSPACE
 $ source devel/setup.sh
 $ rosrun rviz rviz
 ```
-To learn more about rviz movebase and 2d navigation visit:
-http://wiki.ros.org/move_base
-http://wiki.ros.org/navigation
-http://wiki.ros.org/rviz
-
-
+Now run three robot simulation: 
+```
+$ cd $WORKSPACE
+$ source devel/setup.sh
+$ roslaunch multirobot_sim spawn_threerobots.launch 
+```
+Run Exploration package:
+```
+$ cd $WORKSPACE
+$ source devel/setup.sh
+$ roslaunch multiRobot_exploration exploration.launch
+```
