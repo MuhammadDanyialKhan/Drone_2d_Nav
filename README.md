@@ -66,7 +66,7 @@ $ source devel/setup.sh
 
 ```
 $ cd $WORKSPACE/src
-$ git clone https://github.com/MuhammadDanyialKhan/Drone_2d_Nav.git
+$ git clone https://github.com/MuhammadDanyialKhan/MappingAndExploration.git
 $ cd Autonomous_2D_Navigation/
 ```
 ### Install Hector Quadrotor
