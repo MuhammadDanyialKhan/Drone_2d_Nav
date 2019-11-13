@@ -62,7 +62,7 @@ $ catkin_make
 $ source devel/setup.sh
  ```
 
-### Install the Drone_2d_Nav package
+### Install the MappingAndExploration package
 
 ```
 $ cd $WORKSPACE/src
