@@ -50,7 +50,6 @@ $ sudo apt-get install python-catkin-tools
 ```
 
 ### Create the catkin workspace
-This next section creates a ROS workspace and fetch source repositories, placing them in the directory:
 
 Setup the workspace
 ```
